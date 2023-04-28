@@ -1,20 +1,20 @@
 create table cafeUser(
     user_ID varchar2(20) primary key,
-    user_PW varchar2(20),
+    user_PW varchar2(20) not null,
     user_name varchar2(20) not null,
     user_phone varchar2(20) not null,
     user_point number(10) default 1000
 );
 select * from cafeUser;
-
-
+SELECT * FROM cafeMenus;
+commit;
 -- 메뉴 테이블 생성
 CREATE TABLE cafeMenus (
     menu_name VARCHAR2(40) NOT NULL,
     price NUMBER(10) NOT NULL,
     menu_type VARCHAR2(20) NOT NULL
 );
-
+select * from cafeMenus;
 drop table cafeMenus;
 
 -- 메뉴 테이블 메뉴 추가
@@ -84,3 +84,5 @@ INSERT INTO cafeMenus
 VALUES('블루베리에이드', 4000, '에이드');
 INSERT INTO cafeMenus
 VALUES('망고에이드', 4000, '에이드');
+
+commit;

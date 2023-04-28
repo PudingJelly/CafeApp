@@ -15,6 +15,7 @@ public class MenuRepository {
 
 	private DBConnect connection = DBConnect.getInstance();
 
+	//메뉴전체 불러오기
 	public void addMenu () {
 
 		List<Menu> menuList = new ArrayList<>();
@@ -46,7 +47,11 @@ public class MenuRepository {
 			System.out.println("===============================================");
 		}
 	}
-
+	
+	//메뉴입력해서 주문-주문내역에 남기기
+	public void orderMenu() {
+		String orderSql = "";
+	}
 
 
 
