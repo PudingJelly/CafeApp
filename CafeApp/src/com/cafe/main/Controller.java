@@ -2,7 +2,7 @@ package com.cafe.main;
 
 import com.cafe.common.AppStart;
 import com.cafe.user.service.UserJoin;
-import com.cafe.user.service.UserLogin;
+import com.cafe.user.service.UserMenu;
 
 public class Controller {
 	private AppStart service;
@@ -12,16 +12,16 @@ public class Controller {
 		try {
 			switch (choose) {
 			case 1://로그인
-				service = new UserLogin();
+				service = new UserMenu();
 				break;
 			case 2://회원가입
 				service = new UserJoin();
 				break;
-			case 3://비회원 주문
-				
-				break;
-			case 4://프로그램 종료
-				System.out.println("♣이용해 주셔서 감사합니다♣");
+			case 3://프로그램 종료
+				System.out.println(" .　∧∧　■\r\n"
+						+ "　(＾ω＾)／　♣이용해 주셔서 감사합니다♣\r\n"
+						+ "　＜　　/\r\n"
+						+ "　　∪∪\r\n");
 				System.exit(0);
 
 			default:

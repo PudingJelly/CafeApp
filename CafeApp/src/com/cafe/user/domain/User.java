@@ -59,7 +59,7 @@ public class User {
 	}
 	
 	public String toString() {
-		return "♥♥♥ 아이디: "+userID+" | 이름: "+userName+" | 전화번호: "+userPhone+" | 잔여 포인트:"+userPoint;
+		return "♥♥♥ 아이디: "+userID+" | 이름: "+userName+" | 전화번호: "+userPhone;
 	}
 	
 }

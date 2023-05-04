@@ -5,7 +5,6 @@ public class Menu {
 	private String menuName;
 	private int price;
 	private String menuType;
-	
 	public Menu() {}
 
 	public Menu(String menuName, int price, String menuType) {
